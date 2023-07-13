@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Flight Search Results</title>
+</head>
+<body>
+  <h1>Flight Search Results</h1>
+
+  <table>
+    <tr>
+      <th>Flight Number</th>
+      <th>Departure Time</th>
+      <th>Seat Count</th>
+    </tr>
+    {% for flight in flights %}
+      <tr>
+        <td>{{ flight.flight_number }}</td>
+        <td>{{ flight.departure_time }}</td>
+        <td>{{ flight.seat_count }}</td>
+      </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
